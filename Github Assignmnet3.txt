@@ -1,0 +1,94 @@
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (master)
+$ git checkout -b js-assignment
+Switched to a new branch 'js-assignment'
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (js-assignment)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (js-assignment)
+$ git add .
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (js-assignment)
+$ git commit -m "step4 commit"
+On branch js-assignment
+nothing to commit, working tree clean
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (js-assignment)
+$ git add .
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (js-assignment)
+$ git status
+On branch js-assignment
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   app.js
+
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (js-assignment)
+$ git commit -m "added new file app.js"
+[js-assignment c7dde46] added new file app.js
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 app.js
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (js-assignment)
+$ git switch master
+Switched to branch 'master'
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (master)
+$ git add .
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (master)
+$ git commit -m "swiched to master branch"
+On branch master
+nothing to commit, working tree clean
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (master)
+$ git switch js-assignment
+Switched to branch 'js-assignment'
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (js-assignment)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (js-assignment)
+$ git add .
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (js-assignment)
+$ git status
+On branch js-assignment
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   app.js
+
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (js-assignment)
+$ git commit -m "step 11 commit"
+[js-assignment b93df48] step 11 commit
+ 1 file changed, 7 insertions(+)
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (js-assignment)
+$ git switch master
+Switched to branch 'master'
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (master)
+$ git merge js-assignment
+Updating b92e268..b93df48
+Fast-forward
+ app.js | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ create mode 100644 app.js
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (master)
+$ git branch --delete js-assignment
+Deleted branch js-assignment (was b93df48).
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (master)
+$
