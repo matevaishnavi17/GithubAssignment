@@ -1,0 +1,185 @@
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (master)
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+vganeshm@LIN24006479 MINGW64 ~/project_dir (master)
+$ cd --
+
+vganeshm@LIN24006479 MINGW64 ~
+$ cd desktop
+
+vganeshm@LIN24006479 MINGW64 ~/desktop
+$ mkdir GithubAssignmnet2
+
+vganeshm@LIN24006479 MINGW64 ~/desktop
+$ cd GithubAssignment2
+bash: cd: GithubAssignment2: No such file or directory
+
+vganeshm@LIN24006479 MINGW64 ~/desktop
+$ cd GithubAssignmnet2
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2
+$ touch README.txt
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2
+$ git init
+Initialized empty Git repository in C:/Users/VGANESHM/Desktop/GithubAssignmnet2/.git/
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git add .
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git commit -m "first commit"
+[master (root-commit) 980ae41] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.txt
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git checkout -b html-assignmnet
+Switched to a new branch 'html-assignmnet'
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (html-assignmnet)
+$ git status
+On branch html-assignmnet
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (html-assignmnet)
+$ git checkout master README.txt
+Updated 1 path from 62e47c7
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (html-assignmnet)
+$ git status
+On branch html-assignmnet
+nothing to commit, working tree clean
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (html-assignmnet)
+$ touch test.txt
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (html-assignmnet)
+$ git add .
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (html-assignmnet)
+$ git commit -m "Committed changes on html-assignmnents branch"
+[html-assignmnet d05b868] Committed changes on html-assignmnents branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (html-assignmnet)
+$ git status
+On branch html-assignmnet
+nothing to commit, working tree clean
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (html-assignmnet)
+$ git checkout master
+Switched to branch 'master'
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git add .
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git commit -m "Commited changes on master branch"
+[master 92ddd64] Commited changes on master branch
+ 1 file changed, 3 insertions(+)
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git commit -a -m "Git commit master"
+On branch master
+nothing to commit, working tree clean
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git checkout html-assignmnet
+Switched to branch 'html-assignmnet'
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (html-assignmnet)
+$ git status
+On branch html-assignmnet
+nothing to commit, working tree clean
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (html-assignmnet)
+$ git status
+On branch html-assignmnet
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+Merge made by the 'ort' strategy.
+ test.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git merge html-assignments
+merge: html-assignments - not something we can merge
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git merge html-assignment
+merge: html-assignment - not something we can merge
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git checkout html-assignmnet
+Switched to branch 'html-assignmnet'
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (html-assignmnet)
+$ git status
+On branch html-assignmnet
+nothing to commit, working tree clean
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (html-assignmnet)
+$ git commit -a -m "Commit html-assignmnet"
+On branch html-assignmnet
+nothing to commit, working tree clean
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (html-assignmnet)
+$ git status
+On branch html-assignmnet
+nothing to commit, working tree clean
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (html-assignmnet)
+$ git checkout master
+Switched to branch 'master'
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git merge html-assignment
+merge: html-assignment - not something we can merge
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git add README.txt
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git add README.txt
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.txt
+
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git merge html-assignment
+merge: html-assignment - not something we can merge
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git branch --merged
+  html-assignmnet
+* master
+
+vganeshm@LIN24006479 MINGW64 ~/desktop/GithubAssignmnet2 (master)
+$ git branch -d html-assignmnet
+Deleted branch html-assignmnet (was c6e984a).
+
